@@ -9,17 +9,8 @@
 	<meta name="keywords"
 		content="pedagogy, writing school, philippines, manila, poetry, social project, socio-poetic framework, postcolonial, global south">
 	<link rel="preload" href="_next/static/css/2822bf068eb0bbc2.css" as="style">
-	<link rel="stylesheet" href="_next/static/css/2822bf068eb0bbc2.css" data-n-g=""><noscript data-n-css=""></noscript>
-	<script defer="" nomodule="" src="_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
-	<script src="_next/static/chunks/webpack-6224d37324e372cb.js" defer=""></script>
-	<script src="_next/static/chunks/framework-ee17a4c43a44d3e2.js" defer=""></script>
-	<script src="_next/static/chunks/main-cff7252b33a9e0e5.js" defer=""></script>
-	<script src="_next/static/chunks/pages/_app-20677e420591e42a.js" defer=""></script>
-	<script src="_next/static/chunks/45092124-1f07100d0880ee93.js" defer=""></script>
-	<script src="_next/static/chunks/931-e828dcfb3922b5a9.js" defer=""></script>
-	<script src="_next/static/chunks/pages/index-1bb140df28a8855f.js" defer=""></script>
-	<script src="_next/static/-6EAr1AgHqPAjn-91AjqL/_buildManifest.js" defer=""></script>
-	<script src="_next/static/-6EAr1AgHqPAjn-91AjqL/_ssgManifest.js" defer=""></script>
+	<link rel="stylesheet" href="_next/static/css/2822bf068eb0bbc2.css" data-n-g="">
+	 
 	<!-- Google tag (gtag.js) --> 
 	 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z196311WLK"></script>
 	 <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Z196311WLK'); </script>
@@ -58,7 +49,7 @@
 					padding-right: 36px;
 				}
 			</style>
-	<div class="chakra-stack navbar css-1caxhzn">
+<div class="chakra-stack navbar css-1caxhzn">
 			<style data-emotion="css iq2z85">
 				.css-iq2z85 {
 					display: -webkit-box;
@@ -89,37 +80,41 @@
 					</style>
 					<p class="css-1koujw0">[ ] </p>
 				</a></div>
-					<style>
-			.dropdown {
-				position: relative;
-				display: inline-block;
-				display: flex;
-			}
+			<style>
+				.dropdown {
+					position: relative;
+					display: inline-block;
+					display: flex;
+				}
 
-			.dropdown-content {
-	min-width: max-content;
-	top: 0px;
-	left: 0px;
-	transform: translate3d(var(--x), var(--y), 0);
-	z-index: var(--z-index);
-	--transform-origin: top left;
-	--z-index: auto;
-				background-color: #f9f9f9;
-				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-				display: none;
-				isolation: isolate;
-				position: absolute;
-				top: 32px;
-				transform: translate3d(var(--x), var(--y), 0);
-				z-index: 1;
-				right: 0;
-				padding: 6px 4px;
-			}
+				.dropdown-content {
+					min-width: max-content;
+					top: 0px;
+					left: 0px;
+					transform: translate3d(var(--x), var(--y), 0);
+					z-index: var(--z-index);
+					--transform-origin: top left;
+					--z-index: auto;
+					background-color: #f9f9f9;
+					box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+					display: none;
+					isolation: isolate;
+					position: absolute;
+					top: 32px;
+					transform: translate3d(var(--x), var(--y), 0);
+					z-index: 1;
+					right: 0;
+					padding: 6px 4px;
+				}
 
-			.dropdown:hover .dropdown-content {
-				display: block;
-			}
-		</style>
+				/* 
+				.dropdown:hover .dropdown-content {
+					display: block;
+				} */
+				.show {
+					display: block;
+				}
+			</style>
 			<style data-emotion="css 1q7nnf6">
 				.css-1q7nnf6 {
 					display: -webkit-box;
@@ -165,53 +160,62 @@
 						cursor: pointer;
 					}
 				</style>
-				<div class="dropdown chakra-stack css-16430zi" data-scope="menu" data-part="trigger" type="button" dir="ltr"	id="menu::R1adm::trigger" data-uid=":R1adm:" aria-haspopup="menu" data-state="closed">
-					<span>lectures</span><svg class="dropdown"  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+				<div class="dropdown dropdown-button chakra-stack css-16430zi" data-scope="menu" data-part="trigger"
+					type="button" dir="ltr" id="menu::R1adm::trigger" data-uid=":R1adm:" aria-haspopup="menu" data-state="closed"
+					onclick="clickHandler()">
+					<span>lectures</span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
 						height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
 						<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
 					</svg>
-					<div class="dropdown-content">
+
+					<div class="dropdown-content" id="myDropdown">
 						<style>
 							.menu-item {
 								width: 100%;
 								display: block;
 								color: inherit;
 							}
+
 							.menu-item:hover {
 								color: rgb(193, 106, 34);
 							}
-							</style>
+						</style>
+						<script>
+							function clickHandler() {
+								document.getElementById("myDropdown").classList.toggle("show");
+							}
+						</script>
 						<a href="sociology-aslant.html" class="menu-item">
-							<div data-scope="menu" data-part="item" id=":R1adm:/sociology-aslant" role="menuitem"
-								data-ownedby="menu::R1adm::content" data-value="sociology-aslant" class="css-0">sociology aslant</div>
+							<div data-scope="menu" data-part="item" role="menuitem" data-ownedby="menu::R1adm::content"
+								data-value="sociology-aslant" class="css-0">sociology aslant</div>
 						</a>
-						<a href="development-aslant.html"  class="menu-item">
-							<div data-scope="menu" data-part="item" id=":R1adm:/development-aslant" role="menuitem"
-								data-ownedby="menu::R1adm::content" data-value="development-aslant" class="css-0">development aslant
+						<a href="development-aslant.html" class="menu-item">
+							<div data-scope="menu" data-part="item" role="menuitem" data-ownedby="menu::R1adm::content"
+								data-value="development-aslant" class="css-0">development aslant
 							</div>
 						</a>
-						<a href="ecocriticism-aslant.html"  class="menu-item">
-							<div data-scope="menu" data-part="item" id=":R1adm:/ecocriticism-aslant" role="menuitem"
-								data-ownedby="menu::R1adm::content" data-value="ecocriticism-aslant" class="css-0">ecocriticism aslant
+						<a href="ecocriticism-aslant.html" class="menu-item">
+							<div data-scope="menu" data-part="item" role="menuitem" data-ownedby="menu::R1adm::content"
+								data-value="ecocriticism-aslant" class="css-0">ecocriticism aslant
 							</div>
 						</a>
 					</div>
 				</div>
-			<style data-emotion="css age11q">
-				.css-age11q {
-					background: var(--white);
-					padding: 6px;
-					width: auto;
-					margin-top: -6px;
-					font: "Roboto Mono", monospace, sans-serif;
-				}
-			</style>
-			<a href="about.html" class="chakra-stack css-16430zi">
-				<div data-scope="menu" data-part="item" id=":R1adm:/about" role="menuitem" data-ownedby="menu::R1adm::content"
-					data-value="about" class="css-0">about</div>
-			</a>
+				<style data-emotion="css age11q">
+					.css-age11q {
+						background: var(--white);
+						padding: 6px;
+						width: auto;
+						margin-top: -6px;
+						font: "Roboto Mono", monospace, sans-serif;
+					}
+				</style>
+				<a href="about.html" class="chakra-stack css-16430zi">
+					<div data-scope="menu" data-part="item" id=":R1adm:/about" role="menuitem" data-ownedby="menu::R1adm::content"
+						data-value="about" class="css-0">about</div>
+				</a>
+			</div>
 		</div>
-	</div>
 			<div data-scope="tabs" data-part="root" id="tabs::Ralm:" data-orientation="horizontal" dir="ltr" class="css-0">
 				<style data-emotion="css 19p7a8x">
 					.css-19p7a8x {
